@@ -27,7 +27,7 @@ This is my fork of [orkunisitmak/banana-studio](https://github.com/orkunisitmak/
 - Used five features without a paid API key (screenshots 1 to 5).
 - Did not generate any image or video. Generation needs a provider key that costs money, and I did not enter one. Without a key the button stays disabled and says why (screenshot 6).
 - Fixed in this fork: the download links in the README and the desktop guides pointed at v0.1.2 while the latest release is v0.1.10 ([commit ab445e9](https://github.com/Biontra/banana-studio/commit/ab445e9)).
-- Found, not fixed: in an empty gallery the "Create Folder" button sits behind the generation bar (screenshot 7).
+- Found and fixed in this fork: in an empty gallery the "Create Folder" button sat behind the generation bar and could not be clicked (screenshot 7). The empty state did not leave room for the bar and could not scroll. It now does both, with a test ([commit dca04b6](https://github.com/Biontra/banana-studio/commit/dca04b6), screenshot 8). I measured it at five window sizes: before the fix the click failed at four of them, after it a folder can be created at all of them.
 
 **Screenshots from my run**
 
@@ -55,9 +55,13 @@ This is my fork of [orkunisitmak/banana-studio](https://github.com/orkunisitmak/
 
    <img src="docs/fork-notes/06-no-key-blocked.png" width="820" alt="Generate button disabled with a message asking for a provider key" />
 
-7. Empty gallery: "Create Folder" is partly hidden behind the generation bar.
+7. Empty gallery before the fix: "Create Folder" is partly hidden behind the generation bar.
 
    <img src="docs/fork-notes/07-empty-state-create-folder-under-bar.png" width="820" alt="Empty gallery where the Create Folder button sits behind the generation bar" />
+
+8. Empty gallery after the fix: the button stays above the bar.
+
+   <img src="docs/fork-notes/08-empty-state-create-folder-fixed.png" width="820" alt="Empty gallery where the Create Folder button is fully visible above the generation bar" />
 
 ---
 
