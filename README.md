@@ -14,6 +14,53 @@
 
 <p align="center"><sub>Real creations and interface captures from the project owner's account, shared with permission. <a href="docs/assets/README.md">About the demos</a></sub></p>
 
+<a id="fork-notes"></a>
+
+## About this fork (NEXA Fellowship, Week 3)
+
+This is my fork of [orkunisitmak/banana-studio](https://github.com/orkunisitmak/banana-studio), made for the Week 3 task "fork, run, review". This section is mine; everything below it is the original README.
+
+**What I did**
+
+- Installed from source on macOS with `npm ci` and ran the tests: 723 of 725 passed, 2 were skipped.
+- Where I got stuck: the prebuilt Mac app is unsigned and I did not turn off the macOS security check. I ran the desktop build's local server from source instead and opened the interface in a browser.
+- Used five features without a paid API key (screenshots 1 to 5).
+- Did not generate any image or video. Generation needs a provider key that costs money, and I did not enter one. Without a key the button stays disabled and says why (screenshot 6).
+- Fixed in this fork: the download links in the README and the desktop guides pointed at v0.1.2 while the latest release is v0.1.10 ([commit ab445e9](https://github.com/Biontra/banana-studio/commit/ab445e9)).
+- Found, not fixed: in an empty gallery the "Create Folder" button sits behind the generation bar (screenshot 7).
+
+**Screenshots from my run**
+
+1. AI settings: text model changed and saved; it stayed selected after a reload.
+
+   <img src="docs/fork-notes/01-ai-settings.png" width="820" alt="AI settings panel with the text model changed and saved" />
+
+2. Gallery: created a folder named "Thumbnail tests".
+
+   <img src="docs/fork-notes/02-gallery-folder.png" width="820" alt="Gallery with a new folder named Thumbnail tests" />
+
+3. Reference image: uploaded a PNG as a reference in the generation bar.
+
+   <img src="docs/fork-notes/03-reference-upload.png" width="820" alt="Generation bar with an uploaded reference image" />
+
+4. Template: saved 16:9 with three images as a template.
+
+   <img src="docs/fork-notes/04-template-saved.png" width="820" alt="Saved template for 16:9 with three images" />
+
+5. Brainstorm panel: YouTube mode with five ideas.
+
+   <img src="docs/fork-notes/05-brainstorm-panel.png" width="820" alt="Brainstorm panel in YouTube mode with five ideas" />
+
+6. No key: the generate button is disabled and the message says which key is missing.
+
+   <img src="docs/fork-notes/06-no-key-blocked.png" width="820" alt="Generate button disabled with a message asking for a provider key" />
+
+7. Empty gallery: "Create Folder" is partly hidden behind the generation bar.
+
+   <img src="docs/fork-notes/07-empty-state-create-folder-under-bar.png" width="820" alt="Empty gallery where the Create Folder button sits behind the generation bar" />
+
+---
+
 <a id="english"></a>
 
 **Banana Studio brings image generation, selected-area editing, thumbnail planning and video into one gallery.** Start with a sentence, reference images or a YouTube episode. Explore concepts with Brainstorm, refine instructions with Enhance, then generate and compare the results. You do not need to write code to use the Mac or Windows app.
